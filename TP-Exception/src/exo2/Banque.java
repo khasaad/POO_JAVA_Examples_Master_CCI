@@ -6,7 +6,7 @@ package exo2;
 import java.util.ArrayList;
 
 /**
- * @author nmessai
+ * @author Khaled SAAD
  *
  */
 public class Banque {
@@ -21,7 +21,7 @@ public class Banque {
 	 
 	public void ajouter(Compte c) throws CompteExistantException {
 		if(lesComptes.contains(c))
-			throw new CompteExistantException("Ce compte existe déjà");
+			throw new CompteExistantException("Ce compte existe d≈ΩjÀÜ");
 		this.lesComptes.add(c);
 	 }
 	
