@@ -4,7 +4,7 @@
 package exo2;
 
 /**
- * @author nmessai
+ * @author  Khaled SAAD
  *
  */
 public class CompteInexistantException extends Exception {
