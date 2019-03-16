@@ -4,7 +4,7 @@
 package exo2;
 
 /**
- * @author nmessai
+ * @author  Khaled SAAD
  *
  */
 public class BanqueCCI {
@@ -15,25 +15,25 @@ public class BanqueCCI {
 	 */
 	public static void main(String[] args) {
 		
-		// créer une banque :
+		// cr≈Ωer une banque :
 		Banque bCCI = new Banque();
 		
-		// créer des comptes
+		// cr≈Ωer des comptes
 		Compte c1 = new Compte(1);
 		Compte c2 = new Compte(2);
 		Compte c3 = new Compte(3);
 		
-		// créer des clients
+		// cr≈Ωer des clients
 		Client u1 = new Client(1,"nU1","pU1",bCCI);
 		Client u2 = new Client(2,"nU2","pU2",bCCI);
 		Client u3 = new Client(3,"nU3","pU3",bCCI);
 		
-		// ajouter les clients ? il faut une méthode dans Banque.
+		// ajouter les clients ? il faut une m≈Ωthode dans Banque.
 		
-		// ajouter les compte à bCCI
+		// ajouter les compte ÀÜ bCCI
 		try{
 			bCCI.ajouter(c1);
-			System.out.println("L'ajout s'est bien déroulé pour C1");
+			System.out.println("L'ajout s'est bien d≈Ωroul≈Ω pour C1");
 		}
 		catch(CompteExistantException e){
 			System.out.println(e.getMessage());
@@ -41,7 +41,7 @@ public class BanqueCCI {
 		}
 		try{
 			bCCI.ajouter(c1);
-			System.out.println("L'ajout s'est bien déroulé pour C1");
+			System.out.println("L'ajout s'est bien d≈Ωroul≈Ω pour C1");
 		}
 		catch(CompteExistantException e){
 			System.out.println(e.getMessage());
@@ -49,7 +49,7 @@ public class BanqueCCI {
 		}
 		try{
 			bCCI.ajouter(c2);
-			System.out.println("L'ajout s'est bien déroulé pour C2");
+			System.out.println("L'ajout s'est bien d≈Ωroul≈Ω pour C2");
 		}
 		catch(CompteExistantException e){
 			System.out.println(e.getMessage());
@@ -57,15 +57,15 @@ public class BanqueCCI {
 		}
 		try{
 			bCCI.ajouter(c3);
-			System.out.println("L'ajout s'est bien déroulé pour C3");
+			System.out.println("L'ajout s'est bien d≈Ωroul≈Ω pour C3");
 		}
 		catch(CompteExistantException e){
 			System.out.println(e.getMessage());
 			System.out.println("L'ajout n'a pas eu lieu");
 		}
 		
-		// tester les méthodes debit et credit
-		//exemple : le client u1 procède à un retrait de 10
+		// tester les m≈Ωthodes debit et credit
+		//exemple : le client u1 proc¬ède ÀÜ un retrait de 10
 		try {
 			u1.retraitCB(10);
 		} catch (CompteInexistantException e) {
@@ -76,9 +76,9 @@ public class BanqueCCI {
 		// u1 depose 20 et recommence le retrait de 10
 		try {
 			u1.depotEspece(20);
-			System.out.println("dépot de 20 effectué");
+			System.out.println("d≈Ωpot de 20 effectu≈Ω");
 			u1.retraitCB(10);
-			System.out.println("retrait 10 effectué");
+			System.out.println("retrait 10 effectu≈Ω");
 		} catch (IllegalArgumentException e) {
 			e.printStackTrace();
 		} catch (CompteInexistantException e) {
@@ -102,15 +102,15 @@ public class BanqueCCI {
 			System.out.println(e.getMessage());
 		}
 		
-		// dépôt espece sur c3
+		// d≈Ωp‚Ñ¢t espece sur c3
 		try {
 			u3.depotEspece(20);
-			System.out.println("dépôt de 20 effectué sur c3");
+			System.out.println("d≈Ωp‚Ñ¢t de 20 effectu≈Ω sur c3");
 		} catch (IllegalArgumentException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (CompteInexistantException e) {
-			System.out.println("dépôt de 20 non effectué sur c3 car : ");
+			System.out.println("d≈Ωp‚Ñ¢t de 20 non effectu≈Ω sur c3 car : ");
 			System.out.println(e.getMessage());
 		}
 		
