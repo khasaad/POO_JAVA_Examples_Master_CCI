@@ -6,7 +6,7 @@ package exo1;
 import java.util.ArrayList;
 
 /**
- * @author nmessai
+ * @author Khaled SAAD
  *
  */
 public class LIFOStack implements Stack {
