@@ -4,7 +4,7 @@
 package exo2;
 
 /**
- * @author nmessai
+ * @author  Khaled SAAD
  *
  */
 public class Compte {
@@ -21,14 +21,14 @@ public class Compte {
 	
 	public void debit(int montant) throws PasAssezArgentException {
 		if(montant > this.solde)
-			throw new PasAssezArgentException("Decouvert non autorisé");
+			throw new PasAssezArgentException("Decouvert non autoris≈Ω");
 		this.solde-=montant;
 	}
 	
 	public void credit(int montant) throws IllegalArgumentException {
 		if(montant<0)
 			throw new IllegalArgumentException("Attention le montant " +
-					"du crédit doit être positif");
+					"du cr≈Ωdit doit ¬être positif");
 		this.solde+=montant;
 	}
 
