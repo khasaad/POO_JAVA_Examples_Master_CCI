@@ -4,7 +4,7 @@
 package exo1;
 
 /**
- * @author nmessai
+ * @author Khaled SAAD
  *
  */
 public class EmptyStackException extends Exception {
